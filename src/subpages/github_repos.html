@@ -1,13 +1,129 @@
 <!-- Repositories of Github -->
-  <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My projects...</title>
-    <link rel="stylesheet" href="../output.css">
- </head>
- <body>
-    
- </body>
- </html>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-fixed bg-center backdrop-blur-sm"
+  >
+    <!-- Navbar -->
+    <div class="navbar">
+      <ul
+        class="menu flex text-md text-gray-200 bg-black/70 justify-around p-3 m-1 rounded-xl hover:bg-black"
+      >
+        <li>
+          <a
+            class="transition-transform duration-300 hover:scale-125 hover:text-green-500 inline-block"
+            href="../../index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="transition-transform duration-300 hover:scale-125 hover:text-green-500 inline-block"
+            href="./github_repos.html"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            class="transition-transform duration-300 hover:scale-125 hover:text-green-500 inline-block"
+            href="./photos.html"
+            >Photos</a
+          >
+        </li>
+        <li>
+          <a
+            class="transition-transform duration-300 hover:scale-125 hover:text-green-500 inline-block"
+            href="./other_creations.html"
+            >Writings</a
+          >
+        </li>
+        <li>
+          <a
+            class="transition-transform duration-300 hover:scale-125 hover:text-green-500 inline-block"
+            href="./about_me.html"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="grid grid-cols-3 grid-rows-2 bg-black/70 m-10 p-10 rounded-4xl flex-grow text-white"
+    >
+      <a
+        class="m-5 p-5 flex flex-col bg-green-500/10 rounded-3xl border-4 hover:border-double border-green-500/20 hover:border-green-500 shadow-[0_0_10px_green] hover:shadow-none"
+        href="https://github.com/Jupiter-2003/etch-a-sketch"
+      >
+        <div class="text-3xl text-center my-10">etch-a-sketch</div>
+        <div class="text-xl mb-10 mx-5">
+          A project to create a grid layout where we can hover over the divs to
+          sketch. You can adjust the number of grids. The max number of grids is
+          100x100.
+        </div>
+      </a>
+      <div
+        class="m-5 p-5 flex flex-col row-span-2 justify-center items-center gap-5"
+      >
+        <img
+          class="max-w-50 rounded-full shadow-[0_0_10px_green]"
+          src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+          alt="github profile pic"
+        />
+        <a
+          class="text-2xl bg-black border-2 border-black hover:border-green-500 shadow-[0_0_10px_green] hover:shadow-none rounded-2xl p-5"
+          href="https://github.com/Jupiter-2003"
+          >Jupiter-2003</a
+        >
+      </div>
+      <a
+        class="m-5 p-5 flex flex-col bg-green-500/10 rounded-3xl border-4 hover:border-double border-green-500/20 hover:border-green-500 shadow-[0_0_10px_green] hover:shadow-none"
+        href="https://github.com/Jupiter-2003/odin-recipes"
+      >
+        <div class="text-3xl text-center my-10">odin-recipes</div>
+        <div class="text-xl mb-10 mx-5">
+          My first proper project. This project contains recipes for different
+          recipes. I have utilised basic HTML elements to create these webpages.
+          I used img, a(anchor), ul, ol elements. I made this while learning web
+          dev from Odin Project.
+        </div>
+      </a>
+      <a
+        class="m-5 p-5 flex flex-col bg-green-500/10 rounded-3xl border-4 hover:border-double border-green-500/20 hover:border-green-500 shadow-[0_0_10px_green] hover:shadow-none"
+        href="https://github.com/Jupiter-2003/Alexandria"
+      >
+        <div class="text-3xl text-center my-10">Alexandria</div>
+        <div class="text-xl mb-10 mx-5">
+          A sample responsive webpage having a navbar, cards, svg and a footer.
+          Just a project to learn using CSS and Bootstrap effectively. There is
+          a transform property which adds a smooth underline animation to the
+          navbar options on hovering. There is also a dropdown menu on hovering
+          over "About". Also, I've used the svg wave generator from
+          https://getwaves.io/ for some cool designs.
+        </div>
+      </a>
+      <a
+        class="m-5 p-5 flex flex-col bg-green-500/10 rounded-3xl border-4 hover:border-double border-green-500/20 hover:border-green-500 shadow-[0_0_10px_green] hover:shadow-none"
+        href="https://github.com/Jupiter-2003/rock-paper-scissors"
+      >
+        <div class="text-3xl text-center my-10">rock-paper-scissors</div>
+        <div class="text-xl mb-10 mx-5">
+          This is a basic Rock, Paper, Scissors Game. Project for The Odin
+          Project. It consists of an HTML file and a JS file. The JS file
+          contains the game code.
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer py-3 text-gray-200 text-center">
+      &copy; Deep Mitra, 2025
+    </div>
+  </body>
+</html>
