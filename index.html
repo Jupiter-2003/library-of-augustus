@@ -11,7 +11,7 @@
 
   <body class="min-h-screen bg-linear-135 from-blue-950 to-black flex flex-col">
     <!-- Navbar -->
-    <div class="lg:hidden navbar">
+    <div class="xl:hidden navbar sticky top-0 z-50 px-2 font-bold">
       <ul
         class="menu flex text-md text-gray-200 bg-black/30 justify-around p-3 m-1 rounded-xl hover:bg-black/50"
       >
@@ -56,10 +56,10 @@
     <!-- Content -->
     <div class="container flex-grow grid min-w-screen grid-cols-12">
       <aside
-        class="sidebar sticky h-screen top-0 overflow-y-auto hidden lg:col-span-3 lg:flex items-center justify-start m-10"
+        class="sidebar sticky h-screen top-0 overflow-y-auto hidden xl:col-span-3 xl:flex items-center justify-start m-10"
       >
         <ul
-          class="menu rounded-2xl bg-gray-50/10 flex flex-col justify-center p-15 text-gray-200 font-medium text-xl hover:bg-blue-400/10"
+          class="menu rounded-2xl bg-black/30 flex flex-col justify-center p-15 text-gray-200 font-medium text-xl hover:bg-black/50"
         >
           <li>
             <a
@@ -99,7 +99,7 @@
         </ul>
       </aside>
 
-      <div class="content col-span-12 text-gray-300 lg:col-span-9">
+      <div class="content col-span-12 text-gray-300 xl:col-span-9">
         <div class="intro mb-30">
           <div class="sm:text-6xl text-5xl m-20 mb-0">
             Welcome to this cozy little spot on the Internet...
@@ -111,10 +111,10 @@
           </div>
         </div>
         <div
-          class="photo_of_month m-10 mb-20 rounded-2xl bg-gray-200 text-gray-900 flex md:flex-row flex-col-reverse items-center"
+          class="photo_of_month m-10 mb-20 rounded-2xl bg-black/30 text-gray-200 flex md:flex-row flex-col-reverse items-center"
         >
           <img
-            class="md:w-75 sm:w-125 w-100 mb-10 md:mb-5 m-5 rounded-xl"
+            class="md:w-75 sm:w-125 w-75 mb-10 md:mb-5 m-5 rounded-xl"
             src="./src/images/bulb.jpeg"
             alt="a bulb with leds inside"
           />
@@ -122,7 +122,7 @@
             <div class="md:text-4xl text-5xl md:m-5 m-10 text-center">
               Photo Of The Month
             </div>
-            <div class="md:text-2xl text-3xl md:m-5 m-10 text-center">
+            <div class="md:text-2xl text-3xl md:m-5 m-10 text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Dignissimos cum consequuntur labore facere inventore voluptatibus
               minima quas culpa nemo dolores at deleniti, neque nobis rem unde
@@ -131,7 +131,7 @@
           </div>
         </div>
         <div
-          class="fav_movie m-10 rounded-2xl bg-gray-200 text-gray-900 flex md:flex-row flex-col items-center"
+          class="fav_movie m-10 rounded-2xl bg-black/30 text-gray-200 flex md:flex-row flex-col items-center"
         >
           <div class="md:flex-grow">
             <div class="md:text-4xl text-5xl md:m-5 m-10 text-center">
@@ -140,14 +140,16 @@
             <div class="md:text-3xl text-4xl md:m-5 m-10 text-center">
               Asteroid City
             </div>
-            <div class="md:text-2xl text-3xl md:m-5 m-10 text-center">
+            <div
+              class="md:text-2xl text-3xl md:m-5 m-10 text-left md:text-right"
+            >
               In an American desert town circa 1955, the itinerary of a Junior
               Stargazer/Space Cadet convention is spectacularly disrupted by
               world-changing events.
             </div>
           </div>
           <img
-            class="md:w-75 sm:w-125 w-100 mb-10 md:mb-5 m-5 rounded-xl"
+            class="md:w-75 sm:w-125 w-75 mb-10 md:mb-5 m-5 rounded-xl"
             src="./src/images/asteroid city.jpg"
             alt="asteroid city movie poster"
           />
