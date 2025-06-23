@@ -4,14 +4,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cool CSS stuff...</title>
+        <title>A movie review...</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <link rel="stylesheet" href="../output.css" />
+        <style>
+            body {
+                font-family: "Newsreader", serif;
+            }
+            p {
+                margin-top: 20px;
+            }
+        </style>
     </head>
-    <body class="min-h-screen flex flex-col">
+    <body class="min-h-screen flex flex-col bg-gray-200">
         <!-- Navbar -->
         <div class="navbar sticky top-0 z-50 px-2 font-bold">
             <ul
-                class="menu flex text-md text-gray-200 bg-black/70 justify-around p-3 m-1 rounded-xl hover:bg-black"
+                class="menu flex text-md text-gray-200 bg-black justify-around p-3 m-1 hover:bg-black/70"
             >
                 <li>
                     <a
@@ -31,7 +49,7 @@
                     <a
                         class="transition-transform duration-300 hover:scale-125 inline-block"
                         href="./other_creations.html"
-                        >CrazySS</a
+                        >Blog</a
                     >
                 </li>
                 <li>
@@ -45,11 +63,211 @@
         </div>
 
         <!-- Content -->
-        <div class="content"></div>
+        <div class="content p-10 lg:mx-30 xl:w-[1250px] xl:mx-auto">
+            <div
+                class="title text-4xl xl:text-5xl py-5 font-bold text-center border-y-4 border-black border-double"
+            >
+                GHOST IN THE SHELL: A review
+            </div>
+            <div
+                class="author py-10 text-2xl xl:text-3xl border-b-2 border-black text-right xl:text-center"
+            >
+                -by Deep Mitra
+            </div>
+            <div class="source py-5 italic text-md text-gray-700">
+                This review was originally published here:
+                <a
+                    class="text-blue-900 hover:text-purple-500"
+                    href="https://drive.google.com/file/d/1F7WeHTLvd8yOGzWKIum2lBa3YP8P-1ON/view"
+                    >Bitsian Gazette issue 17 (JC BPHC)</a
+                >
+            </div>
+            <div
+                class="stats_pic md:flex md:justify-between mb-5 border-black border-b-2 pb-5"
+            >
+                <img
+                    class="md:w-2/3"
+                    src="../images/ghostinshell.jpg"
+                    alt="GITS poster"
+                />
+                <!-- <table class="">
+                    <tr>
+                        <td>
+                            <a href="https://www.imdb.com/title/tt0113568/"
+                                >IMDb</a
+                            >
+                        </td>
+                        <td>7.9/10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a
+                                href="https://www.rottentomatoes.com/m/ghost_in_the_shell"
+                                >Rotten Tomatoes</a
+                            >
+                        </td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>My rating</td>
+                        <td>
+                            <div class="my_rating">
+                                <span class="fa fa-star text-orange-500"></span>
+                                <span class="fa fa-star text-orange-500"></span>
+                                <span class="fa fa-star text-orange-500"></span>
+                                <span class="fa fa-star text-orange-500"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table> -->
+                <div
+                    class="ratings text-2xl lg:text-3xl xl:text-4xl flex flex-col sm:flex-row md:flex-col flex-1 md:justify-center justify-between items-center"
+                >
+                    <div class="text-center mt-5">
+                        <a
+                            class="font-bold text-blue-900 hover:text-purple-500"
+                            href="https://www.imdb.com/title/tt0113568/"
+                            >IMDb</a
+                        >
+                        <div class="imdb">7.9/10</div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a
+                            class="font-bold text-blue-900 hover:text-purple-500"
+                            href="https://www.rottentomatoes.com/m/ghost_in_the_shell"
+                            >Rotten Tomatoes</a
+                        >
+                        <div class="rtomatoes">95%</div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <div class="font-bold text-blue-900">My rating</div>
+                        <div class="my_rating">
+                            <span class="fa fa-star text-orange-500"></span>
+                            <span class="fa fa-star text-orange-500"></span>
+                            <span class="fa fa-star text-orange-500"></span>
+                            <span class="fa fa-star text-orange-500"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="blog text-xl text-justify border-b-2 border-black pb-5 lg:columns-2"
+            >
+                <p class="text-2xl italic">
+                    The year is 2029. Major Motoko Kusanagi, a cyborg federal
+                    agent, has been assigned the task of tracking down “The
+                    Puppet Master”, a wanted criminal who hacks into and
+                    modifies the consciousness of cyborg-human hybrids. This
+                    consciousness, encased in a mechanical cyber-brain “Shell”,
+                    is called “The Ghost”. Having caused ruckus in Europe and
+                    now targeting Japan, the Puppet Master seems to be
+                    omnipotent with his capability of controlling any artificial
+                    brain. It is now Motoko’s mission to save other cyborgs from
+                    their doom and to find out the Puppet Master’s true
+                    intentions.
+                </p>
+                <p>
+                    Anybody reading this description would have the same doubt –
+                    How is it any different from literally any other anime
+                    action movie? Answering this question would be difficult
+                    without giving away spoilers, so let’s just say that this
+                    movie is not just an action movie but a deeply philosophical
+                    and atmospheric piece of art. A film which can boast of
+                    reflecting the vision of its director, Mamoru Oshii, in
+                    every minute scene.
+                </p>
+                <p>
+                    A feature that really adds to the overall personality of
+                    this movie is the love with which the characters have been
+                    designed. Not just characters, even weapons. The creators
+                    took the decision of not going too hyper-futuristic with the
+                    weapon and equipment designs, and went completely old-
+                    school. The main intention behind producing such objects is
+                    functionality, and they probably didn’t want to compromise
+                    with that. This adds to the cyberpunk aesthetic of this
+                    film, which is further enhanced by the absolute fluidity in
+                    the animation.
+                </p>
+                <p>
+                    Speaking of aesthetics, the soundtrack! Composer Kenji Kawai
+                    fused Bulgarian harmonies and Japanese folk music for the
+                    theme, which played a huge role in immersing the audience
+                    into the world of “Ghost in the Shell”, a world inspired by
+                    the musical chaos of Asian cities, where the modern and the
+                    ancient co-exist.
+                </p>
+                <p>
+                    The theme “Making of a Cyborg” plays out during the opening
+                    credits with the visuals of the making of a cyborg. The
+                    haunting Japanese vocals breathe life into that world, a
+                    world where humanity seems keen to wipe out even the tiniest
+                    hints of their mortality.
+                </p>
+                <p>
+                    However, this upgrade comes at a cost and that is exploited
+                    by the main antagonist of this movie. Since the human body
+                    has become replaceable, attaching one’s identity to it
+                    becomes an issue. This is the age-old paradox of the ship of
+                    Theseus. It goes something like this: to preserve the ship
+                    of Theseus, the old planks were constantly removed and
+                    replaced by fresh wood, but with none of the original parts
+                    existing, is the ship still the actual ship of Theseus?
+                </p>
+                <p>
+                    This dilemma leaves only one thing that a cyborg could refer
+                    to as their identity; their ghost. The Puppet Master targets
+                    these very ghosts, seemingly to use them for his own
+                    motives. But with such tampering of the consciousness, is it
+                    still the same individual? Or is it just an empty shell? Or
+                    was it just a shell from the very beginning, even when it
+                    had its own ghost? Such doubts don’t just arise in the minds
+                    of the audience. Our protagonist Motoko faces such
+                    predicaments herself. One instance of this would be the
+                    scene where she keeps staring at the captured shell of a
+                    cyborg gone rogue due to the actions of the Puppet Master.
+                    She decides to bring her human colleague to the mission
+                    whose brain is real (apart from a few cybernetic implants),
+                    reflecting her belief that “a system where all the parts
+                    react the same way, is a system with a fatal flaw.”
+                </p>
+                <p>
+                    At the time of writing this review, we are closer to the
+                    year shown in the movie than the year of its release. Over
+                    these near-thirty years, this movie kept influencing several
+                    other movies, shows and games due to its visual prowess and
+                    existential probes. With such success, it was followed by a
+                    great sequel along with shows and a live-action adaptation
+                    in 2017 starring Scarlett Johansson. The live-action
+                    adaptation was heavily criticized for toning down the
+                    heavier themes of the 1995 film into generic victim vs evil
+                    organization tropes, but that’s alright. It’s just a
+                    different movie, and it’s unfair to blame them for it. The
+                    1995 version also made significant changes to the story and
+                    the characterization of Motoko while adapting from the
+                    original manga by Masamune Shirow. Thus, the 2017 movie
+                    could be treated as a one-time popcorn watch but what
+                    instead led to its bombing were bland acting performances
+                    and CGI issues.
+                </p>
+                <p>
+                    So, if you are in the mood for a sci-fi anime movie which is
+                    less than 90 minutes long, has a substantial amount of
+                    action (and violence), has underlying themes of
+                    existentialism and is a treat for your eyes - just watch
+                    this movie. It might require rewatching as it blatantly
+                    avoids spoon-feeding and focuses a lot on the nuances of the
+                    human mind. But with each rewatch, you'll unravel another
+                    beautiful detail about its story. A good movie always
+                    demands the viewers to scratch their heads about it, long
+                    after the movie has ended.
+                </p>
+            </div>
+        </div>
 
         <!-- Footer -->
-        <div class="footer py-3 text-gray-200 text-center">
-            &copy; Deep Mitra, 2025
-        </div>
+        <div class="mt-10 footer py-3 text-center">&copy; Deep Mitra, 2025</div>
     </body>
 </html>
